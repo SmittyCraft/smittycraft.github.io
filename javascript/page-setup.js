@@ -25,3 +25,14 @@ function w3_open() {
 } function w3_close() {
   document.getElementById("navSidebar").style.display = "none";
 }
+
+function openTab(tabName) {
+  var i = 0;
+  var x = document.getElementsByClassName('tab');
+  
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = 'none';  
+  }
+  
+  document.getElementById(tabName).style.display = 'block';
+}
