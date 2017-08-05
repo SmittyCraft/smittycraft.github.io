@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmittyCraft</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+</head>
+<body>
+  <!-- Begin Navigation -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="navSidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  </div>
+
+  <div class="w3-green">
+    <button class="w3-button w3-green w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container" id="pageTitle">
+      <h1 class="w3-center w3-xxxlarge">SmittyCraft</h1>
+    </div>
+    <!-- End Navigation -->
+    <div class="w3-container">
+      <p class="w3-large w3-center">
+        Welcome to SmittyCraft! We produce JavaScript APIs that make many aspects of programming in JavaScript easier.
+      </p>
+      <p class="w3-xlarge">
+        Our APIs:
+      </p>
+      
+      <div class="w3-bar w3-green w3-large">
+        <button class="w3-bar-item w3-button" onclick="openTab('math.js')">
+          math.js
+        </button>
+      </div>
+      
+      <div id="math.js" class="w3-container tab w3-card-4 w3-light-gray">
+        <p class="w3-xlarge">math.js</p>
+        <p class="w3-large">math.js expands upon the JavaScript math object, capable of performing functions that are helpful, such as generating a random number between 0 and 1. math.js, however, allows you to specify the minimum and maximum value and more, such as finding the least common mulitiple of two integers..</p>
+      </div>
+      
+      <p class="w3-large">
+        We are very happy to use <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a> to power our pages! A very power CSS library, W3.CSS is perfect for creating beautiful and responsive web pages.
+      </p>
+    </div>
+  </div>
+  <script src="/javascript/page-setup.js"></script>
+</body>
+</html>
