@@ -1,29 +1,23 @@
-// To be assigned values later
-var max;
-var min;
-var jar;
-var hits;
-
-// Call any of the following function with $scm.function();
-var $scm = {
-  randomBetween: function (min, max) {
-    return Math.floor(Math.random() * ((max - min) + 1));
-  },
-  
-  round: function (number) {
+var $math = {
+  random: function () {
     return {
-      toNearest: function (base) {
-        return Math.round(number / base) * base;
+      between: function (min, max) {
+        return Math.floor(Math.random() * ((max - min) + 1));
       },
       
       basic: function () {
-        return Math.round(number);
+        return Math.random();
       }
     };
   },
   
   findLCM: function (numberOne, numberTwo) {
     if (numberOne !== numberTwo) {
+      var i = 0;
+      var max = 0;
+      var min = 0;
+      var hits = [];
+      
       max = Math.max(numberOne, numberTwo);
       min = Math.min(numberOne, numberTwo);
       hits = {
